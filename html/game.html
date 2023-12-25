@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+</head>
+
+<body>
+    <img src="../gif/fireWorks.gif" alt="" class="confetti">
+    <div id="curser" class="displayNon"></div>
+    <div id="fatherinstructions">
+        <div id="instructions" class="displayNon">
+            <h1>הוראות למשחק בול פגיעה:</h1>
+            <p>המחשב בוחר רצף של ארבעה צבעים מתוך שישה ומסתיר אותם מעיניך,<br>
+                עליך לנחש את רצף הצבעים, הקוד אותו בחר המחשב,<br>
+                תחת לוח המשחק מופיעים שישה כפתורי צבע בלחיצה על הכפתור הצבע יגרר איתך <br>
+                ובלחיצה על העיגול הלבן הוא יצבע את הצבע הנבחר <br>
+                לאחר שמלאת את ארבעת הצבעים יופיע כפתור בדוק אותי, שים לב שניתן להחליף את הצבעים רק עד ללחיצה על
+                הכפתור,<br>
+                לאחר הליחצה הכפתור יבדוק אותך ויתן לך ניקוד לפי הפרוט הבא <br>
+                עיגול שחור יסמל צבע נכון הנמצא במיקום נכון ברצף – בול <br>
+                עיגול לבן יסמל צבע נכון שאינו נמצא במיקום נכון ברצף – פגיעה <br>
+                עיגול ריק צבע שאינו נמצא ברצף. <br>לאחר שבעה ניחושים שגויים המשחק נגמר.<br>
+                שים לב, הניקוד לא לפי סדר הנחת הצבעים כמו כן תחילת המשחק היא מצד ימין.<br>
+                אף צבע אינו יכול לחזור פעמיים בקוד<br>
+            ניתן לקבל רמז רק פעם אחת!</p>
+            <button id="toStartGame" id="toStartGameButton" >לתחילת המשחק</button>
+        </div>
+    </div>
+    <div id="fatherContinueOrStartNewGame">
+        <div id="ContinueOrStartNewGame" class="displayNon">
+           <h1>חיכינו לך!</h1>
+           <p id="#weWaitedForYou">בפעם הקודמת לא גמרת את המשחק<br>האם תרצה להמשיך אותו?<br></p>
+           <button class="Continuequstion" id="toContinue">כן,המשך משחק</button>
+           <button class="Continuequstion" id="toStartNewGame">לא, למשחק חדש</button>
+        </div>
+    </div>
+    <div id="fatherContinueOrStartNewGame">
+        <div id="youWonAndGameOver" class="displayNon">
+           <h1>המשחק נגמר!</h1>
+           <button  ><a href="../html/index.html" id="backToHomePage">חזרה לדף הבית</a></button>
+           <button id="toStartNewGameAfterFinish"> משחק חדש</button>
+        </div>
+    </div>
+    <header>
+        <div id="profile">
+            <img class="profile" src="../images/משיחה.png" alt="">
+            <img class="profile" src="../images/משיחה.png" alt="">
+            <img class="profile" id="nameUser" src="../images/משיחה.png" alt="">
+            <img class="profile" src="../images/משיחה.png" alt="">
+            <img class="profile" src="../images/משיחה.png" alt="">
+        </div>
+        <div id="profileElements">
+            <a href="../html/index.html" id="homePage"><i class="fa-solid fa-house"></i></a>
+            <div id="hint"><i class="fa-solid fa-lightbulb"><br>לקבלת רמז</i></div>
+            <div id="name"></div>
+            <div id="score"></div>
+            <div id="yourHigh"></div>
+
+        </div>
+    </header>
+    <main>
+        <div id="gameBord">
+            <div id="code">
+                <figure class="level" id="a">
+                    <div id="a1" data-creat="a1"></div>
+                    <div id="a2" data-creat="a2"></div>
+                    <div id="a3" data-creat="a3"></div>
+                    <div id="a4" data-creat="a4"></div>
+                    <article class="squareScore"><button class="checkMe" data-check="a">בדוק אותי</button></article>
+
+                </figure>
+                <figure class="level" id="b">
+                    <div id="b1" data-creat="b1"></div>
+                    <div id="b2" data-creat="b2"></div>
+                    <div id="b3" data-creat="b3"></div>
+                    <div id="b4" data-creat="b4"></div>
+                    <article class="squareScore"><button class="checkMe" data-check="b">בדוק אותי</button></article>
+                </figure>
+                <figure class="level" id="c">
+                    <div id="c1" data-creat="c1"></div>
+                    <div id="c2" data-creat="c2"></div>
+                    <div id="c3" data-creat="c3"></div>
+                    <div id="c4" data-creat="c4"></div>
+                    <article class="squareScore"><button class="checkMe"  data-check="c">בדוק אותי</button></article>
+                </figure>
+                <figure class="level" id="d">
+                    <div id="d1" data-creat="d1"></div>
+                    <div id="d2" data-creat="d2"></div>
+                    <div id="d3" data-creat="d3"></div>
+                    <div id="d4" data-creat="d4"></div>
+                    <article class="squareScore"><button class="checkMe"  data-check="d">בדוק אותי</button></article>
+                </figure>
+                <figure class="level" id="e">
+                    <div id="e1" data-creat="e1"></div>
+                    <div id="e2" data-creat="e2"></div>
+                    <div id="e3" data-creat="e3"></div>
+                    <div id="e4" data-creat="e4"></div>
+                    <article class="squareScore"><button class="checkMe" data-check="e">בדוק אותי</button></article>
+                </figure>
+                <figure class="level" id="f">
+                    <div id="f1" data-creat="f1"></div>
+                    <div id="f2" data-creat="f2"></div>
+                    <div id="f3" data-creat="f3"></div>
+                    <div id="f4" data-creat="f4"></div>
+                    <article class="squareScore"><button class="checkMe" data-check="f">בדוק אותי</button></article>
+                </figure>
+                <figure class="level" id="g">
+                    <div id="g1" data-creat="g1"></div>
+                    <div id="g2" data-creat="g2"></div>
+                    <div id="g3" data-creat="g3"></div>
+                    <div id="g4" data-creat="g4"></div>
+                    <article class="squareScore"><button class="checkMe" data-check="g">בדוק אותי</button></article>
+                </figure>
+            </div>
+        </div>
+        <div id="balls">
+            <button class="red" data-color="red"></button>
+            <button class="blue" data-color="blue"></button>
+            <button class="yellow" data-color="yellow"></button>
+            <button class="green" data-color="green"></button>
+            <button class="purple" data-color="purple"></button>
+            <button class="palevioletred" data-color="palevioletred"></button>
+        </div>
+        <div id="timmer"><i class="fa-solid fa-clock"><br>00:00</i></div>
+    </main>
+    <script type="text/javascript" src="../js/game.js"></script>
+</body>
+
+</html>

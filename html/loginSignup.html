@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/loginSignup.css">
+    <title>חשבון</title>
+</head>
+<body>
+	<div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<form action="#" id="signup" autocomplete="on" >
+				<h1>צור חשבון</h1>
+				<input id="nameL" type="text" placeholder="שם" required/>
+				<input id="emailL" type="email" placeholder="מייל"required />
+				<input id="passwordL" type="password" placeholder="סיסמא"required />
+				<button id="logInButton" type="submit">הרשם</button>
+			</form>
+		</div>
+		<div class="form-container sign-in-container">
+			<form action="#" id="login" autocomplete="on" >
+				<h1>התחבר</h1>
+				<input id="emailS" type="email" placeholder="מייל" required/>
+				<input id="passwordS" type="password" placeholder="סיסמא" required/>
+				<a href="#">?שכחת את הסיסמא</a>
+				<button id="signUpButton" type="submit">התחבר</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					
+					<h1>כדי להיכנס לאתר יש להכניס פרטי משתמש<h1>
+					<br>
+					<button class="ghost" id="signIn">התחבר</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					
+					<h1>!עדיין לא מחובר אלינו? הרשם כאן<h1>
+						<br>
+					<button class="ghost" id="signUp">הרשם</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="../js/loginSignup.js"></script>
+</body>
+</html>

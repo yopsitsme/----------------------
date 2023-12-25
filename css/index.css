@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+    background-image: url('../images/backgroond2.png');
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
+#hello {
+    text-align: center;
+    /* height: 10vh; */
+    font-size: 2vw;
+}
+
+#signLog {
+    text-align: center;
+    /* height: 10vh; */
+    font-size: 2vw;
+}
+
+#signOut{
+    text-align: center;
+    /* height: 10vh; */
+    font-size: 2vw;
+}
+i{
+    font-size: 2vw;
+    text-align: center;
+}
+
+#signLog:hover{
+    cursor: pointer;
+}
+
+#signOut:hover{
+    cursor: pointer;
+}
+
+#navBar {
+    background-color: rgba(97, 96, 93, 0.584);
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0.1em 0.1em 0.1em  #E9BFB4;
+}
+
+img {
+    width: 21vw;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 5%;
+    border:solid #E9BFB4  0.3em;
+}
+img:hover{
+    border:solid white  0.3em;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(224, 147, 147);
+    
+}
+main{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-areas:
+        "a b"
+        "c d";
+}
+#a{
+    grid-area: a;
+}
+#b{
+    grid-area: b;
+}
+#c{
+    grid-area: c;
+}
+#d{
+    grid-area: d;
+}

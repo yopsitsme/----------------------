@@ -1,0 +1,346 @@
+html {
+    box-sizing: border-box;
+    background-image: url('../images/backgroond1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+#fatherinstructions,
+#fatherContinueOrStartNewGame {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.instructions {
+    width: 50%;
+    height: 400px;
+    margin-top: 200px;
+    z-index: 100;
+    background-color: #E9BFB4;
+    border: solid white 1em;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+
+.ContinueOrStartNewGame {
+    width: 50%;
+    height: 225px;
+    margin-top: 200px;
+    z-index: 100;
+    background-color: #E9BFB4;
+    border: solid white 1em;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+
+.youWonAndGameOver {
+    width: 50%;
+    height: 150px;
+    margin-top: 250px;
+    z-index: 100;
+    background-color: #E9BFB4;
+    border: solid white 1em;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#toStartGameButton {
+    cursor: pointer;
+    margin-top: 2vw;
+    padding: 1vw;
+}
+
+.Continuequstion {
+    cursor: pointer;
+    margin-top: 2vw;
+    padding: 0.8vw;
+}
+
+/* #weWaitedForYou {
+    font-size: 6em;
+} */
+
+.cruser {
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width 0.5s, hight 0.5s;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#profile {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile {
+    width: 15vw;
+    text-align: center;
+}
+
+#nameUser {
+    width: 20vw;
+}
+
+#profileElements {
+    display: flex;
+    position: absolute;
+    position: relative;
+    margin-top: -8vw;
+    z-index: 10;
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+#homePage {
+    margin-right: 3.8em;
+    font-size: 2em;
+    color: black;
+}
+
+#hint {
+    margin-right: 14em;
+    cursor: pointer;
+}
+
+#name {
+    font-size: 1.3em;
+    margin-right: 16vw;
+}
+
+#score {
+    margin-right: 13.5vw;
+}
+
+#yourHigh {
+    margin-right: 8.5vw;
+}
+
+#gameBord {
+    background-color: rgba(123, 118, 118, 0.95);
+    width: 80%;
+    height: 27em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 8vh;
+}
+
+#code {
+    display: flex;
+    justify-content: space-between;
+}
+
+.level>div {
+    width: 3em;
+    height: 3em;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 0.7rem black;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#balls {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: solid black 0.15em;
+}
+
+button:hover {
+    border: solid white 0.15em;
+}
+
+.computerBalls {
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.ballsSorfece {
+    margin-top: -21.28em;
+    margin-right: 4em;
+}
+
+.ballsCover {
+    z-index: 100;
+    width: 7em;
+    height: 20em;
+    background-color: gray;
+    box-shadow: 0.1rem 0.1rem 0.7rem black;
+    margin-top: -15.5em;
+}
+
+.scoure {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas:
+        "a b"
+        "c d";
+    background-color: rgba(123, 118, 118, 0.95);
+    padding: 0.15em;
+    margin: auto;
+
+}
+
+.scoure>div {
+    margin: 0.15em;
+}
+
+.ball1 {
+    grid-area: a;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    border: solid black 0.01em;
+
+}
+
+.ball2 {
+    grid-area: b;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    border: solid black 0.01em;
+
+}
+
+.ball3 {
+    grid-area: c;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    border: solid black 0.01em;
+
+}
+
+.ball4 {
+    grid-area: d;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    border: solid black 0.01em;
+
+}
+
+.red {
+    background: red;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+}
+
+.blue {
+    background: blue;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+
+}
+
+.yellow {
+    background: yellow;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+}
+
+.green {
+    background: green;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+
+}
+
+.purple {
+    background: purple;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+
+}
+
+.palevioletred {
+    background: palevioletred;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+
+}
+
+.checkMeAfter {
+    width: 4rem;
+    height: 4rem;
+    display: inline;
+    position: absolute;
+    margin: auto;
+}
+
+
+.iWon {
+    display: flex;
+    position: absolute;
+    margin-top: -26;
+    z-index: 10;
+    font-size: 100px;
+    width: 100%;
+    height: 95vh;
+}
+
+.squareScore {
+    border: solid 1px black;
+    width: 4em;
+    height: 4em;
+    margin: auto;
+
+}
+
+#backToHomePage{
+    text-decoration: none;
+    color: black;
+}
+
+#timmer {
+    height: 8vh;
+    font-size: 1.6em;
+    text-align: center;
+    position: absolute;
+    margin-top: -2vh;
+    margin-right: 2vw;
+}
+
+.displayNon,
+.checkMe,
+.confetti {
+    display: none;
+}
