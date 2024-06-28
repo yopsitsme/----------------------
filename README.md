@@ -8,8 +8,9 @@
 5. [How to Play](#how-to-play)
 6. [Project Structure](#project-structure)
 7. [Future Improvements](#future-improvements)
-8. [Contributing](#contributing)
-9. [License](#license)
+8. [Screenshots](#Screenshots)
+9. [Contributing](#contributing)
+10. [License](#license)
 
 ## Introduction
 
@@ -56,6 +57,16 @@ cd mastermind-game
 6. Keep guessing until you crack the code or run out of attempts.
 7. Try to beat your best time!
   
+## Screenshots
+
+### Login Screen
+![Login Screen](screenshots/login_screen.png)
+*Figure 1: The login screen where users can sign in or create a new account.*
+
+### Game Board
+![Game Board](screenshots/game_board.png)
+*Figure 2: The main game board showing the color selection, guessing area, and feedback indicators.*
+  
 ## Future Improvements
 
 - Implement responsive design for better mobile and tablet experience.
@@ -67,4 +78,4 @@ cd mastermind-game
 ## Contributing
 
 - Chana Perel Kats ([@yopsitsme](https://github.com/yopsitsme))
-- Rut Rutenberg ([@Yoni4517](https://github.com/Yoni4517))
+- Rut Rutenberg ([@Rut10300](https://github.com/Rut10300))
